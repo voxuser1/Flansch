@@ -1,3 +1,5 @@
+*** GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3) ***
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -672,3 +674,50 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+
+
+
+*** Additional License Information for Embedded Components ***
+
+This project incorporates or is based on components under various licenses:
+
+**A. HISE Framework:**
+The HISE framework used to create this project is licensed under the GNU General Public License Version 3 (GPLv3).
+
+**B. RNBO Exported Code (Core DSP):**
+The core Digital Signal Processing (DSP) logic in this project was generated using the export functionality of Cycling '74 RNBO.
+Copyright (c) 2023 Cycling '74. All rights reserved.
+Within this project, this code is provided under the terms of the GNU General Public License Version 3 (GPLv3), as permitted by Cycling '74's dual-licensing option. The corresponding C++ source code can be found https://github.com/voxuser1/Flansch
+
+**C. RNBO Guitar Pedals Components (Part of RNBO Code):**
+Portions of the RNBO-exported code mentioned above are based on or include code from the "rnbo_guitar_pedals" library by Cycling '74, which is licensed under the MIT License:
+
+   The MIT License
+   Copyright 2022, Cycling '74. All rights reserved.
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+**D. Project Files (XML, HISE Scripts by A-Tom Soundware):**
+The HISE project file (`.xml`) and the specific HISE scripts (`.js` in `Scripts/`) created by A-Tom Soundware for this project are also licensed under the GNU General Public License Version 3 (GPLv3).
+Copyright (c) 2025 A-Tom Soundware.
+
+**E. Assets (Images, Samples, IRs):**
+Please refer to the "Licensing" section of the README.md file for license information regarding any included assets.
+
+**Summary:** The combined work, especially when compiled into a plugin, is governed by the terms of the GPLv3 due to the inclusion of HISE and the choice of GPLv3 for the RNBO-exported code. The MIT-licensed components may be used according to their terms, provided their copyright and permission notices are retained.
