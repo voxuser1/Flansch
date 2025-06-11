@@ -6,7 +6,7 @@ A flanger effect plugin for audio processing, based on RNBO exports and built wi
 
 ## Features
 
-* Core flanger DSP logic derived from RNBO export (incorporating rnbo\_guitar\_pedals components).
+* Core flanger DSP logic derived from RNBO export (incorporating rnbo_guitar_pedals components).
 * User interface built and scripted using HISE.
 * Controllable parameters: Speed, Depth, Position, Offset, Feedback, Color, Spread, Comp, Gain, Mix.
 
@@ -35,10 +35,34 @@ Flansch was built with sound design, musicality, and creative control in mind â€
 
 ## Requirements
 
-* **HISE:** Requires HISE version **`4.0.0+`**. Download HISE: [https://hise.dev](https://hise.dev)
-* **Operating System:** Developed and tested primarily on **macOS Sonoma 14.5.1**. Compatibility with other macOS versions, Windows, or Linux is not guaranteed.
-  *(Note: Developed and tested on macOS 14.5.1. Compatibility with future macOS versions such as 14.6 is untested.)*
-* **(If applicable) Specific Libraries/Dependencies:** None beyond standard HISE installation.
+This section outlines requirements for **building the plugin from this HISE project** and general compatibility notes for **using the compiled plugins**.
+
+### For Building from Source (Using HISE)
+
+*   **HISE Version:** HISE **`4.0.0+`** is required to open and compile this project.
+    *   Download HISE: [https://hise.dev](https://hise.dev)
+*   **Development Operating System:**
+    *   Primarily developed and tested on **macOS Sonoma 14.5.1**.
+    *   Compatibility with other macOS versions, Windows, or Linux for *HISE development* is not guaranteed by the author, though HISE itself is cross-platform.
+*   **Dependencies:**
+    *   A standard HISE installation. No external libraries beyond what HISE manages are typically needed for building.
+    *   To compile plugins, you will need the relevant SDKs installed (e.g., VST3 SDK, AU SDK via Xcode). HISE usually guides you through this.
+
+### For Using Compiled Plugins/Exports
+
+*   **Plugin Formats (if compiled from this project):**
+    *   **VST3:** Requires a host DAW supporting VST3 (64-bit).
+    *   **Audio Unit (AU):** Requires a host DAW supporting AU (64-bit) on macOS.
+    *   **Max for Live (.amxd):** Requires Ableton Live (typically v10+) with Max for Live.
+    *   **Raspberry Pi (RNBO Patch/Export):** Requires a Raspberry Pi (Model 3B+ or newer recommended) with a suitable audio interface (e.g., Pisound) and either the RNBO Runner application or a full version of Max/MSP.
+*   **Operating Systems for Compiled Plugins:**
+    *   **macOS:** Typically macOS 10.13 (High Sierra) or newer (64-bit).
+    *   **Windows:** Typically Windows 10 or newer (64-bit).
+*   **General System Recommendations for End-Users:**
+    *   **CPU:** Intel Core i3 (or AMD equivalent) 4th Gen or newer.
+    *   **RAM:** 4 GB minimum (8 GB+ recommended for DAW use).
+
+*Note: The GitHub repository contains the HISE project source. Pre-compiled plugin installers for end-users (if available) may have their own specific README detailing user-focused system requirements.*
 
 ## What's Included?
 
@@ -59,7 +83,7 @@ This repository contains the necessary files to load the HISE project:
 3. **Load Project:** In HISE, navigate to `File -> Open Project...` and select the `Flansch.xml` file from the downloaded repository folder.
 4. **Ready!** The "Flansch" project should now be loaded in HISE for use or further development. No external samples need to be located.
 5. **(Optional) Compile Plugin:** HISE typically compiles the provided C++ source code from the `DspNetworks/ThirdParty/` directory **internally** when you export the project as a plugin (`File -> Export -> Export as Instrument/Effect Plugin...`). You generally **do not need** to manually create C++ templates or pre-compile the RNBO code into a DLL yourself for use within HISE, as HISE handles the integration of the source code directly. Remember the licensing implications (GPLv3) if you distribute the compiled plugin (see below).
-6. Watch how to import RNBO C++ into HISE: [https://www.youtube.com/watch?v=64dTcwnP40o\&list=PL8GPnq2Y2PthasyFljWcE04f9D2E3jfGe\&index=5](https://www.youtube.com/watch?v=64dTcwnP40o&list=PL8GPnq2Y2PthasyFljWcE04f9D2E3jfGe&index=5)
+6. Watch how to import RNBO C++ into HISE: [https://www.youtube.com/watch?v=64dTcwnP40o&list=PL8GPnq2Y2PthasyFljWcE04f9D2E3jfGe&index=5](https://www.youtube.com/watch?v=64dTcwnP40o&list=PL8GPnq2Y2PthasyFljWcE04f9D2E3jfGe&index=5)
 
 ## IMPORTANT: Licensing
 
