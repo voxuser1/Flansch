@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset Version="1.0.0">
+  <Content Processor="Interface">
+    <Control type="ScriptSlider" id="Speed" value="98.15000152587891"/>
+    <Control type="ScriptSlider" id="Depth" value="0.2099999934434891"/>
+    <Control type="ScriptSlider" id="Position" value="1.159999966621399"/>
+    <Control type="ScriptSlider" id="Offset" value="16.6299991607666"/>
+    <Control type="ScriptSlider" id="Feedback" value="-0.7799999713897705"/>
+    <Control type="ScriptSlider" id="Color" value="270.0"/>
+    <Control type="ScriptSlider" id="Spread" value="0.9300000071525574"/>
+    <Control type="ScriptSlider" id="Mix" value="0.8199999928474426"/>
+    <Control type="ScriptSlider" id="Comp" value="12.64000034332275"/>
+    <Control type="ScriptSlider" id="Gain" value="3.829999923706055"/>
+    <Control type="ScriptComboBox" id="DryWet" value="1.0"/>
+    <Control type="ScriptComboBox" id="Sync" value="1.0"/>
+  </Content>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Preset>

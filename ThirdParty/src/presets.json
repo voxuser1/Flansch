@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Classic",
+    "preset": {
+      "Color": {
+        "value": 291
+      },
+      "Compression": {
+        "value": 25
+      },
+      "Depth": {
+        "value": 0.8
+      },
+      "Feedback": {
+        "value": 0.5
+      },
+      "Gain": {
+        "value": 0
+      },
+      "Gainreduction": {
+        "value": 0
+      },
+      "Mix": {
+        "value": 1
+      },
+      "Offset": {
+        "value": 1.1
+      },
+      "Position": {
+        "value": 0.96
+      },
+      "Speed": {
+        "value": 22
+      },
+      "__sps": {
+        "Compression~": {},
+        "TapTempo": {},
+        "Volume&Clip~": {}
+      },
+      "numberobj_18": {
+        "value": 0.064137147654717
+      },
+      "numberobj_29": {
+        "value": 0
+      }
+    }
+  },
+  {
+    "name": "Talk",
+    "preset": {
+      "Color": {
+        "value": 2000
+      },
+      "Compression": {
+        "value": 24
+      },
+      "Depth": {
+        "value": 1
+      },
+      "Feedback": {
+        "value": -0.87
+      },
+      "Gain": {
+        "value": 4.100000000000001
+      },
+      "Mix": {
+        "value": 1
+      },
+      "Offset": {
+        "value": 1.1
+      },
+      "Position": {
+        "value": 3.6
+      },
+      "Speed": {
+        "value": 0.212
+      },
+      "Spread": {
+        "value": 0.4
+      },
+      "Wet": {
+        "value": 0
+      },
+      "__sps": {
+        "Compression~": {},
+        "Random": {},
+        "Volume&Clip~": {}
+      },
+      "numberobj_13": {
+        "value": 0.064137147654717
+      },
+      "numberobj_22": {
+        "value": 0
+      },
+      "numberobj_33": {
+        "value": 0
+      }
+    }
+  }
+]

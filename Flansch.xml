@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor Type="SynthChain" ID="Flansch" Bypassed="0" Gain="56.22999954223633"
+           Balance="0.0" VoiceLimit="2.0" KillFadeTime="20.0" IconColour="0"
+           packageName="" BuildVersion="650">
+  <ChildProcessors>
+    <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="ScriptProcessor" ID="Interface" Bypassed="1">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptSlider" id="Speed" value="13.22000026702881"/>
+            <Control type="ScriptSlider" id="Depth" value="0.4199999868869781"/>
+            <Control type="ScriptSlider" id="Position" value="5.300000190734863"/>
+            <Control type="ScriptSlider" id="Offset" value="0.0"/>
+            <Control type="ScriptSlider" id="Feedback" value="-0.949999988079071"/>
+            <Control type="ScriptSlider" id="Color" value="4650.0"/>
+            <Control type="ScriptSlider" id="Spread" value="0.2599999904632568"/>
+            <Control type="ScriptSlider" id="Mix" value="0.0"/>
+            <Control type="ScriptSlider" id="Comp" value="24.11000061035156"/>
+            <Control type="ScriptSlider" id="Gain" value="3.029999971389771"/>
+            <Control type="ScriptComboBox" id="DryWet" value="1.0"/>
+            <Control type="ScriptComboBox" id="Sync" value="1.0"/>
+          </Content>
+          <UIData Source="FlanschUIData"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="EffectChain" ID="FX" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="Hardcoded Master FX" ID="HardcodedMasterFX1" Bypassed="0"
+                   Network="Flansch" Speed="13.22000026702881" Depth="0.4199999868869781"
+                   Position="5.300000190734863" Offset="0.0" Color="4650.0" Gainreduction="0.0"
+                   Feedback="-0.949999988079071" Tempo="0.0" Spread="0.2599999904632568"
+                   Rates="1.0" Compression="24.11000061035156" Gain="3.029999971389771"
+                   Mix="0.0" Wet="1.0">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+  </ChildProcessors>
+  <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+  <macro_controls>
+    <macro name="Macro 1" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
+  </macro_controls>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Processor>
