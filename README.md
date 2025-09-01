@@ -2,7 +2,7 @@
 
 A flanger effect plugin for audio processing, based on RNBO exports and built with HISE.
 
-**Project Status:** Version 1.0.1
+**Project Status:** Version 1.0.2
 
 ## Features
 
