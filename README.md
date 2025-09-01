@@ -27,7 +27,7 @@ A flanger effect plugin for audio processing, based on RNBO exports and built wi
 * **Wet Mix**: Independent wet level (for use as send effect).
 * **Tempo Sync**: Supports synced subdivisions (e.g., 1/4, 1/8, triplets).
 * **Tap Button** *(Raspberry Pi only)*: Manually tap in tempo for live use.
-* **Spread** *(Max for Live only)*: Introduces stereo width via modulation offset per channel.
+* **Spread** *(VST/AU/Max for Live only)*: Introduces stereo width via modulation offset per channel.
 
 ### Summary
 
